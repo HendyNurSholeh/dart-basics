@@ -218,6 +218,18 @@ void main(){
     print("     $siswa - Total: $total, Rata-rata: ${rata.toStringAsFixed(1)}");
   });
 
+  var capital = {
+    'Jakarta': 'Indonesia',
+    'London': 'England',
+    'Tokyo': 'Japan',
+  };
+
+  var mapKeys = capital.keys;
+  print("mapKeys: $mapKeys");
+
+  var mapValues = capital.values;
+  print("mapValues: $mapValues");
+
   // 11. TIPS DAN BEST PRACTICES
   print("\n11. TIPS MAP:");
   print("   - Gunakan Map untuk relasi key-value");
