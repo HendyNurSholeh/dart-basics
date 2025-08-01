@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/bin/belajar_dart_dasar.dart">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/bin/belajar_dart_dasar.dart" />
+              <option name="originalContent" value="import 'package:args/args.dart';&#10;&#10;const String version = '0.0.1';&#10;&#10;ArgParser buildParser() {&#10;  return ArgParser()&#10;    ..addFlag(&#10;      'help',&#10;      abbr: 'h',&#10;      negatable: false,&#10;      help: 'Print this usage information.',&#10;    )&#10;    ..addFlag(&#10;      'verbose',&#10;      abbr: 'v',&#10;      negatable: false,&#10;      help: 'Show additional command output.',&#10;    )&#10;    ..addFlag('version', negatable: false, help: 'Print the tool version.');&#10;}&#10;&#10;void printUsage(ArgParser argParser) {&#10;  print('Usage: dart belajar_dart_dasar.dart &lt;flags&gt; [arguments]');&#10;  print(argParser.usage);&#10;}&#10;&#10;void main(List&lt;String&gt; arguments) {&#10;  print('test');&#10;  final ArgParser argParser = buildParser();&#10;  try {&#10;    final ArgResults results = argParser.parse(arguments);&#10;    bool verbose = false;&#10;&#10;    // Process the parsed arguments.&#10;    if (results.flag('help')) {&#10;      printUsage(argParser);&#10;      return;&#10;    }&#10;    if (results.flag('version')) {&#10;      print('belajar_dart_dasar version: $version');&#10;      return;&#10;    }&#10;    if (results.flag('verbose')) {&#10;      verbose = true;&#10;    }&#10;&#10;    // Act on the arguments provided.&#10;    print('Positional arguments: ${results.rest}');&#10;    if (verbose) {&#10;      print('[VERBOSE] All arguments: ${results.arguments}');&#10;    }&#10;  } on FormatException catch (e) {&#10;    // Print usage information if an invalid argument was provided.&#10;    print(e.message);&#10;    print('');&#10;    printUsage(argParser);&#10;  }&#10;}&#10;" />
+              <option name="updatedContent" value="void main() {&#10;  print('Hello, World!');&#10;  print('Selamat belajar Dart!');&#10;  &#10;  // Mulai belajar Dart dari sini&#10;  // Contoh: variabel, function, class, dll&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
