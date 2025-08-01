@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/bin/const_vs_final_demo.dart">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/bin/const_vs_final_demo.dart" />
+              <option name="updatedContent" value="void main() {&#10;  // CONST - Nilai harus sudah diketahui saat kompilasi&#10;  const String namaApp = &quot;Belajar Dart&quot;;&#10;  const int versi = 1;&#10;  const double pi = 3.14159;&#10;  &#10;  // FINAL - Nilai bisa ditentukan saat runtime&#10;  final DateTime waktuSekarang = DateTime.now(); // Runtime value&#10;  final String pesanWaktu = &quot;Program dijalankan pada: $waktuSekarang&quot;;&#10;  &#10;  // Keduanya bisa digunakan saat runtime&#10;  print(&quot;=== CONST (sudah ditentukan saat kompilasi) ===&quot;);&#10;  print(&quot;Nama App: $namaApp&quot;);&#10;  print(&quot;Versi: $versi&quot;);&#10;  print(&quot;PI: $pi&quot;);&#10;  &#10;  print(&quot;\n=== FINAL (ditentukan saat runtime) ===&quot;);&#10;  print(pesanWaktu);&#10;  &#10;  // PERBEDAAN UTAMA:&#10;  print(&quot;\n=== PERBEDAAN ===&quot;);&#10;  &#10;  // Ini TIDAK BISA dengan const karena DateTime.now() adalah runtime value&#10;  // const DateTime constTime = DateTime.now(); // ERROR!&#10;  &#10;  // Tapi ini BISA dengan final&#10;  final DateTime finalTime = DateTime.now(); // OK!&#10;  &#10;  print(&quot;Final time: $finalTime&quot;);&#10;  &#10;  // Keduanya tidak bisa diubah setelah diinisialisasi&#10;  // namaApp = &quot;App Baru&quot;; // ERROR!&#10;  // waktuSekarang = DateTime.now(); // ERROR!&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
