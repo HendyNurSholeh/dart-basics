@@ -19,6 +19,15 @@
             </PendingDiffInfo>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/bin/oop/main.dart">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/bin/oop/main.dart" />
+              <option name="originalContent" value="void main(){&#10;  Animal animal = Animal('Kucing', 3);&#10;}" />
+              <option name="updatedContent" value="import 'Animal.dart';&#10;&#10;void main(){&#10;  // Membuat object Animal&#10;  Animal animal = Animal('Kucing', 3);&#10;  &#10;  // Menampilkan informasi animal&#10;  animal.displayInfo();&#10;  &#10;  // Memanggil method makeSound&#10;  animal.makeSound();&#10;  &#10;  // Membuat beberapa animal lainnya&#10;  Animal anjing = Animal('Anjing', 5);&#10;  Animal burung = Animal('Burung', 2);&#10;  &#10;  print('\n=== Semua Hewan ===');&#10;  anjing.displayInfo();&#10;  anjing.makeSound();&#10;  &#10;  burung.displayInfo();&#10;  burung.makeSound();&#10;  &#10;  // Mengubah properti&#10;  animal.name = 'Kucing Persia';&#10;  animal.age = 4;&#10;  &#10;  print('\n=== Setelah Update ===');&#10;  animal.displayInfo();&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/bin/set.dart">
           <value>
             <PendingDiffInfo>
