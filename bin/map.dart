@@ -227,7 +227,7 @@ void main(){
   var mapKeys = capital.keys;
   print("mapKeys: $mapKeys");
 
-  var mapValues = capital.values;
+    var mapValues = capital.values;
   print("mapValues: $mapValues");
 
   // 11. TIPS DAN BEST PRACTICES
