@@ -1,5 +1,6 @@
 import 'Animal.dart';
 import 'Cat.dart';
+import 'JenisKelamin.dart';
 // import 'Cat.dart';
 
 void main(){
@@ -11,5 +12,8 @@ void main(){
     ..eat(0.5); // Kucing Persia Cantik is eating 0.5 kg of food. New weight: 17.0 kg
 
   cat.jumpTo("banjar");
+
+  JenisKelamin jenisKelamin = JenisKelamin.lakiLaki;
+  print('Jenis Kelamin: ${jenisKelamin.name}'); // Jenis Kelamin: laki-laki
 
 }
