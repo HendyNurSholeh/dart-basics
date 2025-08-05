@@ -16,4 +16,5 @@ void main(){
   JenisKelamin jenisKelamin = JenisKelamin.lakiLaki;
   print('Jenis Kelamin: ${jenisKelamin.name}'); // Jenis Kelamin: laki-laki
 
+
 }
